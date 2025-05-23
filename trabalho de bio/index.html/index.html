@@ -1,0 +1,334 @@
+<html class="scroll-smooth" lang="pt-BR">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Dengue - Informações e Prevenção
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-50 text-gray-800 min-h-screen flex flex-col">
+  <header class="bg-red-600 text-white shadow-md sticky top-0 z-50">
+   <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+    <h1 class="text-2xl font-extrabold flex flex-col md:flex-row md:items-center gap-1 md:gap-2">
+     <span class="flex items-center gap-2">
+      <i class="fas fa-virus text-yellow-300 text-3xl">
+      </i>
+      Dengue Info
+     </span>
+     <span class="text-sm font-normal md:ml-2 text-yellow-200">
+      Informações importantes
+     </span>
+    </h1>
+    <nav class="hidden md:flex space-x-8 font-semibold">
+     <a class="hover:text-yellow-300 transition" href="#sobre">
+      Sobre a Dengue
+     </a>
+     <a class="hover:text-yellow-300 transition" href="#sintomas">
+      Sintomas
+     </a>
+     <a class="hover:text-yellow-300 transition" href="#prevencao">
+      Prevenção
+     </a>
+     <a class="hover:text-yellow-300 transition" href="#situacao-rs">
+      Situação RS 2025
+     </a>
+     <a class="hover:text-yellow-300 transition" href="#dados-painel">
+      Dados do Painel RS
+     </a>
+    </nav>
+    <button aria-label="Abrir menu" class="md:hidden focus:outline-none" id="menu-btn">
+     <i class="fas fa-bars text-2xl">
+     </i>
+    </button>
+   </div>
+   <nav class="hidden bg-red-700 text-white px-4 py-4 space-y-3 md:hidden" id="mobile-menu">
+    <a class="block hover:text-yellow-300 transition" href="#sobre">
+     Sobre a Dengue
+    </a>
+    <a class="block hover:text-yellow-300 transition" href="#sintomas">
+     Sintomas
+    </a>
+    <a class="block hover:text-yellow-300 transition" href="#prevencao">
+     Prevenção
+    </a>
+    <a class="block hover:text-yellow-300 transition" href="#situacao-rs">
+     Situação RS 2025
+    </a>
+    <a class="block hover:text-yellow-300 transition" href="#dados-painel">
+     Dados do Painel RS
+    </a>
+   </nav>
+  </header>
+  <main class="flex-grow max-w-7xl mx-auto px-4 py-10 space-y-20">
+   <!-- Sobre a Dengue -->
+   <section class="bg-white rounded-lg shadow-md p-8" id="sobre">
+    <h2 class="text-3xl font-extrabold text-red-600 mb-6 flex items-center gap-3">
+     <i class="fas fa-info-circle">
+     </i>
+     O que é a Dengue?
+    </h2>
+    <div class="md:flex md:gap-8">
+     <div class="md:w-1/2">
+      <p class="mb-4 leading-relaxed text-justify">
+       A dengue é uma doença viral transmitida pelo mosquito
+       <strong>
+        Aedes aegypti
+       </strong>
+       , que se prolifera em água parada. É uma doença que pode variar de leve a grave, podendo levar a complicações sérias e até a morte se não tratada adequadamente.
+      </p>
+      <p class="mb-4 leading-relaxed text-justify">
+       Os sintomas geralmente aparecem entre 4 e 10 dias após a picada do mosquito infectado. A dengue é um problema de saúde pública no Brasil e no mundo, exigindo atenção e prevenção constantes.
+      </p>
+      <p class="mb-4 leading-relaxed text-justify">
+       Para mais informações detalhadas, consulte o
+       <a class="text-red-600 underline hover:text-red-800" href="https://www.einstein.br/n/glossario-de-saude/dengue" target="_blank">
+        Glossário de Saúde do Hospital Albert Einstein
+       </a>
+       .
+      </p>
+     </div>
+     <div class="md:w-1/2 flex justify-center items-center mt-6 md:mt-0">
+      <img alt="Foto macro do mosquito Aedes aegypti pousado em uma folha verde, com detalhes das asas e corpo, em ambiente natural" class="rounded-lg shadow-lg max-w-full h-auto" height="400" loading="lazy" src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/05/aedes_aegypti_getty-e1706725898766.jpg?w=1200&amp;h=900&amp;crop=1" width="600"/>
+     </div>
+    </div>
+   </section>
+   <!-- Sintomas da Dengue -->
+   <section class="bg-white rounded-lg shadow-md p-8" id="sintomas">
+    <h2 class="text-3xl font-extrabold text-red-600 mb-6 flex items-center gap-3">
+     <i class="fas fa-notes-medical">
+     </i>
+     Sintomas da Dengue
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+     <div class="bg-red-50 border border-red-300 rounded-lg p-5 flex items-center gap-4 shadow-sm hover:shadow-md transition">
+      <i class="fas fa-thermometer-full text-red-600 text-3xl">
+      </i>
+      <p class="font-semibold text-red-700">
+       Febre alta (acima de 38°C)
+      </p>
+     </div>
+     <div class="bg-red-50 border border-red-300 rounded-lg p-5 flex items-center gap-4 shadow-sm hover:shadow-md transition">
+      <i class="fas fa-head-side-cough text-red-600 text-3xl">
+      </i>
+      <p class="font-semibold text-red-700">
+       Dor de cabeça intensa
+      </p>
+     </div>
+     <div class="bg-red-50 border border-red-300 rounded-lg p-5 flex items-center gap-4 shadow-sm hover:shadow-md transition">
+      <i class="fas fa-eye text-red-600 text-3xl">
+      </i>
+      <p class="font-semibold text-red-700">
+       Dor atrás dos olhos
+      </p>
+     </div>
+     <div class="bg-red-50 border border-red-300 rounded-lg p-5 flex items-center gap-4 shadow-sm hover:shadow-md transition">
+      <i class="fas fa-dumbbell text-red-600 text-3xl">
+      </i>
+      <p class="font-semibold text-red-700">
+       Dores musculares e nas articulações
+      </p>
+     </div>
+     <div class="bg-red-50 border border-red-300 rounded-lg p-5 flex items-center gap-4 shadow-sm hover:shadow-md transition">
+      <i class="fas fa-tint text-red-600 text-3xl">
+      </i>
+      <p class="font-semibold text-red-700">
+       Manchas vermelhas na pele
+      </p>
+     </div>
+     <div class="bg-red-50 border border-red-300 rounded-lg p-5 flex items-center gap-4 shadow-sm hover:shadow-md transition">
+      <i class="fas fa-vomit text-red-600 text-3xl">
+      </i>
+      <p class="font-semibold text-red-700">
+       Náuseas e vômitos
+      </p>
+     </div>
+     <div class="bg-red-50 border border-red-300 rounded-lg p-5 flex items-center gap-4 shadow-sm hover:shadow-md transition">
+      <i class="fas fa-bed text-red-600 text-3xl">
+      </i>
+      <p class="font-semibold text-red-700">
+       Cansaço extremo
+      </p>
+     </div>
+     <div class="bg-red-50 border border-red-300 rounded-lg p-5 flex items-center gap-4 shadow-sm hover:shadow-md transition">
+      <i class="fas fa-ban text-red-600 text-3xl">
+      </i>
+      <p class="font-semibold text-red-700">
+       Falta de apetite
+      </p>
+     </div>
+    </div>
+    <div class="mt-8 bg-yellow-100 border-l-4 border-yellow-400 p-4 rounded shadow-inner flex items-center gap-4">
+     <i class="fas fa-exclamation-triangle text-yellow-600 text-2xl">
+     </i>
+     <p class="font-semibold text-yellow-800">
+      Importante: Idosos são mais vulneráveis. Ao apresentar sintomas, procure imediatamente a unidade de saúde mais próxima.
+     </p>
+    </div>
+    <div class="mt-8 flex flex-col sm:flex-row gap-6 justify-center items-center text-gray-700 font-semibold">
+     <div class="flex items-center gap-2 bg-red-100 border border-red-300 rounded-lg px-5 py-3 shadow-md w-full sm:w-auto justify-center">
+      <i class="fas fa-newspaper text-red-600 text-xl">
+      </i>
+      Diário Gaúcho +1
+     </div>
+     <div class="flex items-center gap-2 bg-red-100 border border-red-300 rounded-lg px-5 py-3 shadow-md w-full sm:w-auto justify-center">
+      <i class="fas fa-hospital text-red-600 text-xl">
+      </i>
+      Secretaria da Saúde +1
+     </div>
+    </div>
+   </section>
+   <!-- Prevenção da Dengue -->
+   <section class="bg-white rounded-lg shadow-md p-8" id="prevencao">
+    <h2 class="text-3xl font-extrabold text-red-600 mb-6 flex items-center gap-3">
+     <i class="fas fa-shield-alt">
+     </i>
+     Como Prevenir a Dengue
+    </h2>
+    <ul class="list-disc list-inside space-y-3 text-lg text-gray-700 max-w-3xl mx-auto">
+     <li>
+      Elimine água parada: verifique vasos de plantas, pneus, garrafas e calhas.
+     </li>
+     <li>
+      Tampe caixas d’água e tonéis.
+     </li>
+     <li>
+      Mantenha lixeiras bem fechadas.
+     </li>
+     <li>
+      Use repelente e roupas que cubram o corpo.
+     </li>
+     <li>
+      Instale telas em janelas e portas.
+     </li>
+     <li>
+      Evite acumular lixo e mantenha o quintal limpo.
+     </li>
+    </ul>
+    <div class="mt-8 flex justify-center">
+     <img alt="Frasco de argila amarelo vintage sobre uma mesa de madeira, representando cuidados naturais e prevenção" class="rounded-lg shadow-lg max-w-full h-auto" height="400" loading="lazy" src="https://microambiental.com.br/wp-content/uploads/2024/02/frasco-de-argila-amarelo-vintage.jpg" width="700"/>
+    </div>
+   </section>
+   <!-- Situação do Rio Grande do Sul sobre a Dengue em 2025 -->
+   <section class="bg-white rounded-lg shadow-md p-8" id="situacao-rs">
+    <h2 class="text-3xl font-extrabold text-red-600 mb-6 flex items-center gap-3">
+     <i class="fas fa-map-marker-alt">
+     </i>
+     Situação da Dengue no Rio Grande do Sul - 2025
+    </h2>
+    <div class="space-y-6 max-w-4xl mx-auto text-gray-700 text-justify leading-relaxed">
+     <p>
+      O Rio Grande do Sul tem registrado uma queda significativa nos casos de dengue em 2025. Segundo a Secretaria da Saúde do estado, houve uma redução de 81,8% nos casos nos dois primeiros meses do ano, em comparação com o mesmo período do ano anterior.
+     </p>
+     <p>
+      Essa redução é resultado de um esforço conjunto entre a população e as autoridades de saúde, que reforçaram as campanhas de prevenção, o combate ao mosquito transmissor e a capacitação dos profissionais da saúde.
+     </p>
+     <p>
+      O governo estadual lançou um plano nacional para fortalecer as residências e capacitar profissionais da saúde, visando manter o controle da doença e evitar surtos futuros.
+     </p>
+     <p>
+      Para mais detalhes, consulte as fontes oficiais:
+     </p>
+     <ul class="list-disc list-inside space-y-2 text-red-600 font-semibold">
+      <li>
+       <a class="underline hover:text-red-800" href="https://saude.rs.gov.br/secretaria-da-saude-reforca-cuidados-que-a-populacao-deve-ter-para-prevencao-contra-a-dengue?utm_source=chatgpt.com" target="_blank">
+        Secretaria da Saúde RS - Cuidados para prevenção
+       </a>
+      </li>
+      <li>
+       <a class="underline hover:text-red-800" href="https://leouve.com.br/brasil/rio-grande-do-sul-registra-queda-de-818-nos-casos-de-dengue-brasil-soma-mais-de-500-mil/?utm_source=chatgpt.com" target="_blank">
+        Leouve - Queda de 81,8% nos casos de dengue
+       </a>
+      </li>
+      <li>
+       <a class="underline hover:text-red-800" href="https://www.gov.br/saude-lanca-plano-nacional-para-fortalecer-residencias-e-capacitar-profissionais-da-saude/pt-br/assuntos/noticias-para-os-estados/rio-grande-do-sul/2025/marco/rio-grande-do-sul-registra-queda-de-81-8-nos-casos-de-dengue-nos-2-primeiros-meses-de-2025?utm_source=chatgpt.com" target="_blank">
+        Governo Federal - Plano Nacional de Saúde
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div class="mt-8 flex justify-center">
+     <img alt="Foto aérea do Rio Grande do Sul com áreas urbanas e rurais, ilustrando a situação da dengue em 2025" class="rounded-lg shadow-lg max-w-full h-auto" height="400" loading="lazy" src="https://www.rbsdirect.com.br/filestore/5/4/6/3/5/9/4_03b528ab60b38aa/4953645_60da38d1b823463.jpg?w=1024&amp;h=512&amp;a=c&amp;version=1575255600" width="700"/>
+    </div>
+   </section>
+   <!-- Dados do Painel RS -->
+   <section class="bg-white rounded-lg shadow-md p-8" id="dados-painel">
+    <h2 class="text-3xl font-extrabold text-red-600 mb-6 flex items-center gap-3">
+     <i class="fas fa-chart-bar">
+     </i>
+     Dados do Painel de Casos de Dengue no RS
+    </h2>
+    <div class="max-w-4xl mx-auto text-gray-700">
+     <p class="mb-4 text-justify">
+      Conforme o painel oficial da Secretaria da Saúde do Rio Grande do Sul, os dados mais recentes indicam:
+     </p>
+     <ul class="list-disc list-inside space-y-3 mb-6 text-lg">
+      <li>
+       <strong>Casos confirmados em maio de 2025:</strong> 1.095
+      </li>
+      <li>
+       <strong>Casos notificados em maio de 2025:</strong> 2.450
+      </li>
+      <li>
+       <strong>Casos descartados em maio de 2025:</strong> 1.200
+      </li>
+      <li>
+       <strong>Municípios com casos confirmados:</strong> 42
+      </li>
+      <li>
+       <strong>Casos graves e óbitos:</strong> 10 casos graves e 1 óbito confirmado
+      </li>
+     </ul>
+     <p class="mb-4 text-justify">
+      Esses números reforçam a importância da prevenção e do acompanhamento constante da situação epidemiológica no estado.
+     </p>
+     <p class="text-center">
+      <a class="inline-block bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition" href="https://ti.saude.rs.gov.br/dengue/painel_de_casos.html" target="_blank" rel="noopener noreferrer">
+       Acessar Painel Oficial da Dengue RS
+      </a>
+     </p>
+    </div>
+   </section>
+  </main>
+  <footer class="bg-red-600 text-white py-6 mt-20 text-center">
+   <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+    <p class="text-sm">
+     © 2024 Dengue Info. Todos os direitos reservados.
+    </p>
+    <div class="flex gap-6 text-xl">
+     <a aria-label="Hospital Albert Einstein" class="hover:text-yellow-300 transition" href="https://www.einstein.br/n/glossario-de-saude/dengue" target="_blank">
+      <i class="fas fa-hospital">
+      </i>
+     </a>
+     <a aria-label="Secretaria da Saúde RS" class="hover:text-yellow-300 transition" href="https://saude.rs.gov.br" target="_blank">
+      <i class="fas fa-heartbeat">
+      </i>
+     </a>
+     <a aria-label="BeCode Sites Incríveis CSS" class="hover:text-yellow-300 transition" href="https://becode.com.br/sites-incriveis-css/" target="_blank">
+      <i class="fas fa-code">
+      </i>
+     </a>
+    </div>
+   </div>
+   <p class="mt-4 text-sm font-semibold">
+    Feito por Pedro, Matheus Pereira, Jesse e Thiago - 3MC
+   </p>
+  </footer>
+  <script>
+   const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+ </body>
+</html>
